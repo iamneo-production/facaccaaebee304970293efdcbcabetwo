@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
@@ -11,7 +10,9 @@
 </head>
 
 <body>
-    <h1>Tic Tac Toe</h1>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
     <div class="box">
         <div class="row">
             <button class="btn" onclick="makeMove(0)"></button>
@@ -29,8 +30,13 @@
             <button class="btn" onclick="makeMove(8)"></button>
         </div>
     </div>
-    <div class="result">Player X's turn</div>
-    <button id="reset" onclick="resetGame()" disabled>Reset</button>
+    <div class="result-container">
+        <p class="result">Player X's turn</p>
+    </div>
+    <div class="reset">
+        <button class="reset-btn" onclick="resetGame()">Reset</button>
+    </div>
+
 </body>
 
 </html>
