@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
-  <script src="app.js" defer></script> <!-- Link your JavaScript file -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+    <script src="app.js" defer></script> <!-- Link your JavaScript file -->
 </head>
+
 <body>
-  <h1>Tic Tac Toe</h1>
-  <div class="box">
-    <div class="row">
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
+    <h1>Tic Tac Toe</h1>
+    <div class="box">
+        <div class="row">
+            <button class="btn" onclick="makeMove(0)"></button>
+            <button class="btn" onclick="makeMove(1)"></button>
+            <button class="btn" onclick="makeMove(2)"></button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="makeMove(3)"></button>
+            <button class="btn" onclick="makeMove(4)"></button>
+            <button class="btn" onclick="makeMove(5)"></button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="makeMove(6)"></button>
+            <button class="btn" onclick="makeMove(7)"></button>
+            <button class="btn" onclick="makeMove(8)"></button>
+        </div>
     </div>
-    <div class="row">
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
-    </div>
-    <div class="row">
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
-    </div>
-  </div>
-  <div class="result">Player X's turn</div>
-  <button id="reset">Reset</button>
+    <div class="result">Player X's turn</div>
+    <button id="reset" onclick="resetGame()" disabled>Reset</button>
 </body>
+
 </html>
